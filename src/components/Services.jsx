@@ -13,7 +13,7 @@ const Services = async () => {
       {/* Services Items  */}
       {data &&
         data.map((item) => (
-          <div key={item.id} className="flex justify-center items-center my-5 py-5">
+          <div data-aos="fade-up" key={item.id} className="flex justify-center items-center my-5 py-5">
             <div className="">
               <div className="w-2/3 space-y-6">
                 <span className="text-green-500 text-bold">

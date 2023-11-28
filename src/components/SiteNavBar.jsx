@@ -20,7 +20,7 @@ const SiteNavBar = () => {
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 space-x-3 text-xl">
             <li>
               <Link href="/">Start</Link>
             </li>
@@ -52,7 +52,7 @@ const SiteNavBar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn btn-success text-white">Button</a>
+          <a className="btn btn-success text-white">Sign In</a>
         </div>
       </div>
     </div>

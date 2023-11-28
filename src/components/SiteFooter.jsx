@@ -1,11 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
 
+async function getData() {
+  const res = await fetch(process.env.BASE_URL + "api/StatList");
+  if (!res.ok) {
+    throw new Error("StatList Data fething failed!!");
+  }
+  return res.json();
+}
+
 const SiteFooter = () => {
   return (
     <>
       <div className="bg-[#2A323C]">
-        <ul className="menu menu-vertical lg:menu-horizontal rounded-box justify-center w-full bg-[#2A323C] py-8 text-xl">
+        <ul className="menu menu-vertical lg:menu-horizontal rounded-box justify-center w-full bg-[#2A323C] py-8 text-2xl space-x-2">
           <li>
             <Link href="/">Start</Link>
           </li>

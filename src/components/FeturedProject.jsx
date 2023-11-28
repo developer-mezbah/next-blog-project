@@ -17,7 +17,7 @@ const FeturedProject = async () => {
           <div className="title text-5xl">Featured Projects</div>
         </div>
 
-        <button className="btn btn-success text-white">Secondary</button>
+        <button className="btn btn-success text-white">See More...</button>
       </div>
       <div className="mt-10">
         <div className="w-full">

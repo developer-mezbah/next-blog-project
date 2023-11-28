@@ -33,17 +33,17 @@ const HeroAnimation = ({data}) => {
         </div>
       </div>
       <div className="w-full" style={{transform: hoverHero.transform}}>
-        <div className="grid grid-cols-2 gap-2">
-          <div>
+        <div className="flex flex-wrap gap-2">
+          <div className="big-hero">
             <Image
               className="h-[300px] max-w-full rounded-lg object-cover"
               src={data.image1}
-              width={500}
+              width={600}
               height={300}
               alt="This is banner"
             />
           </div>
-          <div>
+          <div className="small-hero">
             <Image
               className="h-[300px] max-w-full rounded-lg object-cover"
               src={data.image2}
@@ -52,7 +52,7 @@ const HeroAnimation = ({data}) => {
               alt="This is banner"
             />
           </div>
-          <div>
+          <div className="small-hero">
             <Image
               className="h-[300px] max-w-full rounded-lg object-cover"
               src={data.image3}
@@ -61,7 +61,7 @@ const HeroAnimation = ({data}) => {
               alt="This is banner"
             />
           </div>
-          <div>
+          <div className="big-hero">
             <Image
               className="h-[300px] max-w-full rounded-lg object-cover"
               src={data.image4}
