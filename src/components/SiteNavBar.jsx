@@ -2,8 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const SiteNavBar = () => {
+  const currentRoute = usePathname()
+  console.log(currentRoute);
   return (
     <div>
       <div className="navbar bg-base-100">
@@ -20,34 +23,21 @@ const SiteNavBar = () => {
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 space-x-3 text-xl">
-            <li>
-              <Link href="/">Start</Link>
-            </li>
-            {/* <li tabIndex={0}>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
-            </li> */}
-            <li>
-              <Link href="/team">Team</Link>
+          <ul className="flex px-1 space-x-3 text-xl">
+            <li className="">
+              <Link className={currentRoute === "/" ? "py-2 px-4 rounded-xl bg-[#00935F] text-white hover:bg-[#00935f48]" : "py-2 px-4 rounded-xl"} href="/">Start</Link>
             </li>
             <li>
-              <Link href="/services">Services</Link>
+              <Link href="/team" className={currentRoute === "/team" ? "py-2 px-4 rounded-xl bg-[#00935F] text-white hover:bg-[#00935f48]" : "py-2 px-4 rounded-xl"}>Team</Link>
             </li>
             <li>
-              <Link href="/projects">Projects</Link>
+              <Link className={currentRoute === "/services" ? "py-2 px-4 rounded-xl bg-[#00935F] text-white hover:bg-[#00935f48]" : "py-2 px-4 rounded-xl"} href="/services">Services</Link>
             </li>
             <li>
-              <Link href="/testimonials">Testimonials</Link>
+              <Link className={currentRoute === "/projects" ? "py-2 px-4 rounded-xl bg-[#00935F] text-white hover:bg-[#00935f48]" : "py-2 px-4 rounded-xl"} href="/projects">Projects</Link>
+            </li>
+            <li>
+              <Link className={currentRoute === "/testimonials" ? "py-2 px-4 rounded-xl bg-[#00935F] text-white hover:bg-[#00935f48]" : "py-2 px-4 rounded-xl"} href="/testimonials">Testimonials</Link>
             </li>
           </ul>
         </div>
