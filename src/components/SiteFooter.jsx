@@ -12,8 +12,8 @@ async function getData() {
 const SiteFooter = () => {
   return (
     <>
-      <div className="bg-[#2A323C]">
-        <ul className="menu menu-vertical lg:menu-horizontal rounded-box justify-center w-full bg-[#2A323C] py-8 text-2xl space-x-2">
+      <div className="bg-[#2A323C] overflow-hidden">
+        <ul className="text-green-500 menu menu-vertical lg:menu-horizontal rounded-box justify-center w-full bg-[#2A323C] py-8 text-2xl space-x-2">
           <li>
             <Link href="/">Start</Link>
           </li>

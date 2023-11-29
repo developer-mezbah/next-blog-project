@@ -9,7 +9,7 @@ async function getData() {
 const Services = async () => {
   const data = await getData();
   return (
-    <div className="w-5/6 m-auto my-20">
+    <div className="w-5/6 m-auto md:my-20 my-10">
       {/* Services Items  */}
       {data &&
         data.map((item) => (

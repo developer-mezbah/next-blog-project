@@ -60,7 +60,7 @@ const Contacts = () => {
   return (
     <form onSubmit={formSubmit} className="">
       <Toaster />
-      <div className="flex justify-center items-center max-w-screen bg-white">
+      <div className="flex justify-center items-center max-w-screen bg-white overflow-hidden text-center">
         {/* COMPONENT CODE */}
 
         <div className="container mx-auto my-4 px-4 lg:px-20">

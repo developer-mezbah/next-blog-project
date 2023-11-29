@@ -9,8 +9,8 @@ const SiteNavBar = () => {
   console.log(currentRoute);
   return (
     <>
-      <div className="lg:w-[80%] flex justify-between items-center logo-sign m-auto text-left my-5">
-        <div className="w-full basis-1/6">
+      <div className="lg:w-[80%] flex justify-between items-center logo-sign m-auto text-left my-5 overflow-hidden">
+        <div className="w-full md:basis-1/6 basis-2/6">
           <Link href="/" className="btn btn-ghost text-xl">
             {/* <img className='h-12' src='atis-assets/logo/atis/atis-mono-black.svg' alt='' width='auto'/> */}
             <Image
@@ -22,7 +22,7 @@ const SiteNavBar = () => {
             Atis
           </Link>
         </div>
-        <div className="w-full basis-1/6 text-center">
+        <div className="w-full md:basis-1/6 basis-2/6 text-center">
           <button className="btn btn-outline btn-success py-1 px-2 md:py-3 md:px-5">Sign In</button>
         </div>
       </div>

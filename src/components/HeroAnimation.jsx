@@ -20,7 +20,7 @@ const HeroAnimation = ({data}) => {
   return (
     <div ref={hero} className="lg:flex justify-center items-center w-[80%] m-auto mt-10">
       <div className="w-full space-y-6">
-        <p className="text-6xl">
+        <p className="lg:text-6xl text-4xl">
           {data.title} problems{" "}
           <span className="text-[#269669]">problems</span>
         </p>

@@ -13,8 +13,8 @@ const Brands = async () => {
     <section className="bg-white py-20 dark:bg-dark lg:py-[120px]">
       <div className="container mx-auto">
         <div className="flex flex-wrap -mx-4">
-          <div className="w-full px-4">
-            <h1 className="text-center mb-5 text-4xl text-green-500 font-bold underline">
+          <div className="w-full lg:px-4">
+            <h1 className="text-center mb-5 md:text-4xl text-2xl text-green-500 font-bold underline">
               Trusted by <span className="text-black underline">brands </span>
               all over the <span className="text-black underline">
                 {" "}
