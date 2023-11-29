@@ -36,7 +36,7 @@ const Team = async () => {
                     alt="Bonnie Avatar"
                     width={300}
                     height={300}
-                    className="rounded-tl-lg rounded-bl-lg"
+                    className="rounded-tl-lg md:rounded-bl-lg m-auto rounded-lg mt-5 md:mt-0 h-[200px] object-cover lg:h-[250px]"
                   />
                 </a>
                 <div className="p-5">

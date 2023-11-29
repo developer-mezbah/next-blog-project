@@ -9,13 +9,13 @@ async function getData() {
 const Services = async () => {
   const data = await getData();
   return (
-    <div className="w-3/6 m-auto my-20">
+    <div className="w-5/6 m-auto my-20">
       {/* Services Items  */}
       {data &&
         data.map((item) => (
-          <div data-aos="fade-up" key={item.id} className="flex justify-center items-center my-5 py-5">
+          <div key={item.id} className="lg:flex justify-center items-center my-5 py-5">
             <div className="">
-              <div className="w-2/3 space-y-6">
+              <div className="w-full space-y-6">
                 <span className="text-green-500 text-bold">
                   Lorem ipsum dolor sit amet.
                 </span>
@@ -29,17 +29,17 @@ const Services = async () => {
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="grid gap-4">
+            <div className="flex gap-3 w-full mt-8 justify-center items-center">
+              <div className="space-y-3">
                 <div>
                   <Image
                     src={
                       item.image1
                     }
-                    width={200}
-                    height={200}
+                    width={500}
+                    height={500}
                     alt="Services iamges"
-                    className="h-auto max-w-full rounded-lg"
+                    className="h-auto w-[300px] rounded-tl-lg"
                   />
                 </div>
                 <div>
@@ -47,10 +47,10 @@ const Services = async () => {
                     src={
                       item.image2
                     }
-                    width={200}
+                    width={500}
                     height={500}
                     alt="Services iamges"
-                    className="h-auto max-w-full rounded-lg"
+                    className="h-auto w-[300px] rounded-bl-lg"
                   />
                 </div>
               </div>
@@ -60,10 +60,10 @@ const Services = async () => {
                     src={
                       item.image3
                     }
-                    width={200}
+                    width={500}
                     height={500}
                     alt="Services iamges"
-                    className="h-auto max-w-full rounded-lg"
+                    className="h-auto w-[300px] rounded-tr-lg"
                   />
                 </div>
                 <div>
@@ -71,10 +71,10 @@ const Services = async () => {
                     src={
                       item.image4
                     }
-                    width={200}
-                    height={200}
+                    width={500}
+                    height={500}
                     alt="Services iamges"
-                    className="h-auto max-w-full rounded-lg"
+                    className="h-auto w-[300px] rounded-br-lg"
                   />
                 </div>
               </div>
