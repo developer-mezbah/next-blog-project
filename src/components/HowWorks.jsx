@@ -14,7 +14,7 @@ const HowWorks = async () => {
       <h2 className="text-5xl mt-2 font-thin">
         Build & Launch <br /> without problems
       </h2>
-      <div className="how-works flex mt-7 items-center w-4/6 m-auto">
+      <div className="how-works lg:flex mt-7 items-center w-full lg:w-5/6 m-auto space-y-5 lg:space-y-0">
         {data &&
           data.map((item) => (
             <div key={item.id} className="how-works-item">

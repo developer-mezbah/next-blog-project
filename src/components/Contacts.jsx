@@ -58,9 +58,9 @@ const Contacts = () => {
     }
   };
   return (
-    <form onSubmit={formSubmit}>
+    <form onSubmit={formSubmit} className="">
       <Toaster />
-      <div className="flex justify-center items-center max-w-screen h-screen bg-white overflow-hidden">
+      <div className="flex justify-center items-center max-w-screen bg-white">
         {/* COMPONENT CODE */}
 
         <div className="container mx-auto my-4 px-4 lg:px-20">

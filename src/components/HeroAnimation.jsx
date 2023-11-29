@@ -18,7 +18,7 @@ const HeroAnimation = ({data}) => {
         z: 11,
       });
   return (
-    <div ref={hero} className="flex justify-center items-center w-[80%] m-auto mt-10">
+    <div ref={hero} className="lg:flex justify-center items-center w-[80%] m-auto mt-10">
       <div className="w-full space-y-6">
         <p className="text-6xl">
           {data.title} problems{" "}
@@ -32,11 +32,11 @@ const HeroAnimation = ({data}) => {
           <button className="btn btn-success">How it works</button>
         </div>
       </div>
-      <div className="w-full" style={{transform: hoverHero.transform}}>
+      <div className="w-full mt-10 lg:mt-0" style={{transform: hoverHero.transform}}>
         <div className="flex flex-wrap gap-2">
           <div className="big-hero">
             <Image
-              className="h-[300px] max-w-full rounded-lg object-cover"
+              className="md:h-[300px] max-w-full rounded-lg object-cover h-[200px]"
               src={data.image1}
               width={600}
               height={300}
@@ -45,7 +45,7 @@ const HeroAnimation = ({data}) => {
           </div>
           <div className="small-hero">
             <Image
-              className="h-[300px] max-w-full rounded-lg object-cover"
+              className="md:h-[300px] max-w-full rounded-lg object-cover h-[200px]"
               src={data.image2}
               width={500}
               height={300}
@@ -54,7 +54,7 @@ const HeroAnimation = ({data}) => {
           </div>
           <div className="small-hero">
             <Image
-              className="h-[300px] max-w-full rounded-lg object-cover"
+              className="md:h-[300px] max-w-full rounded-lg object-cover h-[200px]"
               src={data.image3}
               width={500}
               height={300}
@@ -63,7 +63,7 @@ const HeroAnimation = ({data}) => {
           </div>
           <div className="big-hero">
             <Image
-              className="h-[300px] max-w-full rounded-lg object-cover"
+              className="md:h-[300px] max-w-full rounded-lg object-cover h-[200px]"
               src={data.image4}
               width={500}
               height={300}

@@ -14,14 +14,14 @@ const FeturedProject = async () => {
       <div className="w-full flex justify-between items-center">
         <div>
           <div className="subtitle text-green-500">Have a Good Day.</div>
-          <div className="title text-5xl">Featured Projects</div>
+          <div className="title md:text-5xl text-2xl">Featured Projects</div>
         </div>
 
-        <button className="btn btn-success text-white">See More...</button>
+        <button className="btn btn-success text-white p-1 md:p-3">See More...</button>
       </div>
       <div className="mt-10">
         <div className="w-full">
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3">
             {data &&
               data.map((item) => (
                 <div key={item.id}>
