@@ -25,6 +25,7 @@ const AllProject = async () => {
                   className="project-item zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%]"
                   data-te-ripple-init=""
                   data-te-ripple-color="dark"
+                  data-aos="zoom-in-left"
                 >
                   <Image
                     src={

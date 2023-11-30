@@ -1,7 +1,8 @@
+
 import SiteNavBar from "@/components/SiteNavBar";
 import "./globals.css";
 import SiteFooter from "@/components/SiteFooter";
-// import NextTopLoader from 'nextjs-toploader';
+import Progress from "@/components/ProgressBar";
 
 export async function generateMetadata() {
   const res = await fetch(process.env.BASE_URL + "api/SiteMeta/home");
@@ -32,7 +33,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/* <NextTopLoader color="#269669" height={3} speed={200}/> */}
         <link
           rel="icon"
           href="/atis-assets/logo/atis/atis-color-sign.svg"
@@ -40,6 +40,7 @@ export default function RootLayout({ children }) {
         />
         <SiteNavBar />
         {children}
+        <Progress/>
         <SiteFooter />
       </body>
     </html>
